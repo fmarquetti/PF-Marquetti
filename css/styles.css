@@ -1,0 +1,440 @@
+/*Estilo título*/
+
+
+
+
+/*formato titulo
+
+h1 {
+    color: #a2d2ff;
+    font-size: 50px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: left;
+    text-shadow: #087fa7cc;
+    background-color: #cdb4db;
+}
+
+*/
+
+
+
+#logo {
+
+    position: relative;
+    z-index: 4;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+
+/*----------------------------------Formato barra navegacion--------------------------------------------*/
+nav {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 10px;
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color: #34495e;
+    border-radius: 10px;
+    font-size: 0;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.088);
+
+}
+
+nav a {
+
+    line-height: 10px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 160px;
+}
+
+a:nth-child(2) {
+    width: 160px;
+}
+
+a:nth-child(3) {
+    width: 160px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 160px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100%;
+    left: 0;
+    background-color: #6cc4c4;
+
+}
+
+
+
+nav .start-nosotros,
+a:nth-child(2):hover~.animation {
+    width: 100%;
+    left: 210;
+    background-color: #fbe4a3;
+}
+
+nav .start-novedades,
+a:nth-child(3):hover~.animation {
+    width: 100%;
+    left: 100;
+    background-color: #f4947c;
+}
+
+
+
+nav .start-servicios,
+a:nth-child(4):hover~.animation {
+    width: 100%;
+    left: 310;
+    background-color: #f9bf90;
+}
+
+nav .start-contacto,
+a:nth-child(5):hover~.animation {
+    width: 100%;
+    left: 470;
+    background-color: #dcddac;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------formato cuerpo------------------------------------------------------------------*/
+
+body {
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
+}
+
+/*----------------------------------------- formato cajones alcance------------------------------------------------------------- */
+
+#cajon-alcance {
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: #6cc4c4;
+    display: inline-block;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+}
+
+#titulo-alcance {
+
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+#texto-alcance {
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*---------------------------------------- formato cajones nosotros------------------------------------------------------------- */
+
+#cajon-nosotros {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fbe4a3;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+#titulo-nosotros {
+
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#nosotros-presentaciones {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icono-carla img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+}
+
+#icono-romina img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+}
+
+#div-carla {
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+
+}
+
+#div-romina {
+    float: right;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+#texto-nosotros {
+    margin-left: 27px;
+    margin-right: 27px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+
+}
+
+/*---------------------------------------- formato cajones contacto------------------------------------------------------------- */
+
+#cajon-contacto {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: #dcddac;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.339);
+    color: white;
+
+}
+
+#formulario-contacto {
+    display: grid;
+    grid-template-columns: 15% 10%;
+    grid-template-rows: 30px 30px 30px 30px 30px 170px 30px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*------------------------------------------------Formato Carrousel----------------------------------------------------------*/
+
+#carrousel-imagenes {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+#carrousel-imagenes img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 80%;
+    transition: .5s ease;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#carrousel-imagenes img:hover {
+    cursor: pointer;
+    width: 600px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+
+/*------------------------------------------------Formato footer--------------------------------------------------------------*/
+
+#footer-home {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 15;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: #6cc4c4;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+    
+}
+
+#footer-nosotros {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 18;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: #fbe4a3;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+#footer-novedades {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 18;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: #f4947c;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+#footer-servicios {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 18;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: #f9bf90;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+#footer-contacto {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 18;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: #dcddac;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+@media (max-width: 800px) {
+
+    #carrousel-imagenes {
+        height: 200px;
+    }
+
+    #carrousel-imagenes img:hover {
+        width: 30%;
+    }
+
+}
