@@ -31,6 +31,21 @@ h1 {
 }
 
 /*----------------------------------Formato barra navegacion--------------------------------------------*/
+
+#navegacion-mobile {
+    visibility: collapse;
+    height: 0;
+}
+
+#navegacion-ancha {
+    background-color: #6cc4c4;
+    z-index: 1;
+    visibility: visible;
+    height: 240px;
+}
+
+
+
 nav {
     opacity: 80%;
     text-align: center;
@@ -130,12 +145,6 @@ a:nth-child(5):hover~.animation {
     left: 470;
     background-color: #dcddac;
 }
-
-
-
-
-
-
 
 
 /*---------------------------------------------------formato cuerpo------------------------------------------------------------------*/
@@ -427,6 +436,8 @@ body {
 
 }
 
+/*------------------------Si la pantalla es menos a el ancho de 800px-----------------*/
+
 @media (max-width: 800px) {
 
     #navegacion-ancha {
@@ -437,7 +448,11 @@ body {
     #navegacion-mobile {
         background-color: #6cc4c4;
         z-index: 1;
+        visibility: visible;
+        height: 240px;
     }
+
+    
 
 
     ul {
@@ -483,8 +498,8 @@ body {
     a {
         display: block;
         background: #6cc4c4;
-        margin: 4px;
-        padding: 10px;
+        margin: 2px;
+        padding: 8px;
         list-style: none;
         border: 1px solid white;
         border-radius: 3px;
