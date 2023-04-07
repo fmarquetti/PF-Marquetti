@@ -12,14 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav id="navegacion-ancha">
             <div>
                 <figure id="logo">
                     <img src="./img/logoblanco.png" alt="KIRANA Eventos" width="200px">
@@ -32,8 +30,26 @@
                 <a href="./pages/novedades.html">NOVEDADES</a>
                 <a href="./pages/servicios.html">SERVICIOS</a>
                 <a href="./pages/contacto.html">CONTACTO</a>
-                <div class="animation start-home"></div>
+                
             </div>
+        </nav>
+
+        <nav id="navegacion-mobile">
+            <div id="logo-mobile">
+                <figure>
+                    <img src="./img/logoblanco.png" alt="KIRANA Eventos" width="200px">
+                    <figcaption>KIRANA EVENTOS</figcaption>
+                </figure>
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu">☰</label>
+            <ul>
+                <a href="./index.html">HOME</a>
+                <a href="./pages/nosotros.html">NOSOTROS</a>
+                <a href="./pages/novedades.html">NOVEDADES</a>
+                <a href="./pages/servicios.html">SERVICIOS</a>
+                <a href="./pages/contacto.html">CONTACTO</a>
+            </ul>
         </nav>
     </header>
 
@@ -100,9 +116,7 @@
             </div>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

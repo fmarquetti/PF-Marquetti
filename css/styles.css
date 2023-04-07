@@ -336,7 +336,7 @@ body {
     border-radius: 8px;
     background-color: #6cc4c4;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-    
+
 }
 
 #footer-nosotros {
@@ -429,12 +429,79 @@ body {
 
 @media (max-width: 800px) {
 
+    #navegacion-ancha {
+        visibility: collapse;
+        height: 0;
+    }
+
+    #navegacion-mobile {
+        background-color: #6cc4c4;
+        z-index: 1;
+    }
+
+
+    ul {
+        display: none;
+    }
+
+    input:checked ~ ul {
+        display: block;
+    }
+
+    input {
+        display:none;
+    }
+
+    label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    label:hover{
+        background: white;
+    }
+
+    /*Estilo cuando esta expandido el menu hamburguesa*/
+    input:checked~label {
+        background: white;
+    }
+
+    ul {
+        margin-top: 0;
+        padding: 0;
+        width: fit-content;
+    }
+
+    a {
+        display: block;
+        background: #6cc4c4;
+        margin: 4px;
+        padding: 10px;
+        list-style: none;
+        border: 1px solid white;
+        border-radius: 3px;
+
+    }
+
+    a:hover{
+        filter: brightness(110%)
+    }
+
+
     #carrousel-imagenes {
         height: 200px;
     }
 
     #carrousel-imagenes img:hover {
-        width: 30%;
+        width: 50%;
     }
 
 }
