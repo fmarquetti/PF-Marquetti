@@ -192,6 +192,75 @@ body {
     color: white;
 }
 
+/*----------------------------------------- formato cajones servicios------------------------------------------------------------- */
+#cajon-servicios {
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+    position: relative;
+    border-radius: 8px;
+    background-color: #f9bf90;
+}
+
+#estilo-servicios {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#estilo-servicios>div {
+    flex-basis: calc(33.33% - 20px);
+}
+
+#titulo-servicios {
+
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+#texto-servicios,
+h3 {
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#imagenes-servicios img {
+
+    background-size: cover;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#estilo-cajones-imagenes-texto{
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    background-color:#f9bf90 ;
+    margin: 10px auto 10px;
+}
+
 /*---------------------------------------- formato cajones nosotros------------------------------------------------------------- */
 
 #cajon-nosotros {
@@ -452,19 +521,19 @@ body {
         height: 240px;
     }
 
-    
+
 
 
     ul {
         display: none;
     }
 
-    input:checked ~ ul {
+    input:checked~ul {
         display: block;
     }
 
     input {
-        display:none;
+        display: none;
     }
 
     label {
@@ -480,7 +549,7 @@ body {
         user-select: none;
     }
 
-    label:hover{
+    label:hover {
         background: white;
     }
 
@@ -506,7 +575,7 @@ body {
 
     }
 
-    a:hover{
+    a:hover {
         filter: brightness(110%)
     }
 
@@ -517,6 +586,29 @@ body {
 
     #carrousel-imagenes img:hover {
         width: 50%;
+    }
+
+    #estilo-servicios > div {
+        flex-basis: 100%;
+    }
+
+    #titulo-servicios {
+        font-size: 24px;
+    }
+
+    #texto-servicios,
+    h3 {
+        font-size: 14px;
+    }
+
+    #imagenes-servicios img {
+
+        max-width: 100%;
+
+    }
+
+    #estilo-cajones-imagenes-texto{
+        border-style:hidden;
     }
 
 }
