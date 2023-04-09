@@ -152,6 +152,7 @@ a:nth-child(5):hover~.animation {
 body {
     background-image: url("../img/background.png");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 /*----------------------------------------- formato cajones alcance------------------------------------------------------------- */
@@ -204,14 +205,13 @@ body {
 }
 
 #estilo-servicios {
-
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 #estilo-servicios>div {
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(50% - 20px);
 }
 
 #titulo-servicios {
@@ -245,7 +245,7 @@ h3 {
     border-radius: 8px;
     border-style: solid;
     border-color: white;
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.196);
     max-width: 100%;
     height: auto;
     display: block;
@@ -253,12 +253,11 @@ h3 {
 
 }
 
-#estilo-cajones-imagenes-texto{
+#estilo-cajones-imagenes-texto {
     border-radius: 8px;
-    border-style: solid;
-    border-color: white;
-    background-color:#f9bf90 ;
     margin: 10px auto 10px;
+    background-color: #0000000b;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
 }
 
 /*---------------------------------------- formato cajones nosotros------------------------------------------------------------- */
@@ -289,9 +288,10 @@ h3 {
 
 #nosotros-presentaciones {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-flow: wrap;
+    justify-content: space-between;
     align-items: center;
+    margin: 40px;
 }
 
 #icono-carla img {
@@ -336,6 +336,63 @@ h3 {
     font-size: 18px;
     color: white;
 
+}
+
+/*---------------------------------------- formato cajones novedades------------------------------------------------------------- */
+
+#cajon-novedades {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f4947c;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+    color: white;
+
+}
+
+#titulo-novedades{
+    color: white;
+    font-size: 38px
+}
+
+#imagenes-novedades img{
+    background-size: cover;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.196);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#texto-novedades,
+h3 {
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#estilo-cajones-imagenes-texto-novedades {
+    border-radius: 8px;
+    margin: 10px auto 10px;
+    background-color: #0000000b;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    width: 80%;
 }
 
 /*---------------------------------------- formato cajones contacto------------------------------------------------------------- */
@@ -395,115 +452,144 @@ h3 {
 
 /*------------------------------------------------Formato footer--------------------------------------------------------------*/
 
-#footer-home {
-    opacity: 80%;
-    text-align: center;
-    margin: 10px auto 27px;
-    width: 100%;
-    height: 100%;
-    font-size: 15;
+/*-------------------Footer Home-------------*/
+#footer-home ul {
+    color: white;
+    font-size: 18;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     border-radius: 8px;
     background-color: #6cc4c4;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-
 }
 
-#footer-nosotros {
-    opacity: 80%;
+#footer-home li {
+    width: 30%;
+    margin: 10px auto 10px;
     text-align: center;
-    margin: 10px auto 27px;
-    width: 100%;
-    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    background-color: #0000000b;
+}
+
+/*---------------------Footer Nosotros------------------------*/
+
+#footer-nosotros ul {
+    color: white;
     font-size: 18;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     border-radius: 8px;
     background-color: #fbe4a3;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-
 }
 
-#footer-novedades {
-    opacity: 80%;
+#footer-nosotros li {
+    width: 30%;
+    margin: 10px auto 10px;
     text-align: center;
-    margin: 10px auto 27px;
-    width: 100%;
-    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    background-color: #0000000b;
+}
+
+/*---------------------Footer Novedades------------------------*/
+
+#footer-novedades ul {
+    color: white;
     font-size: 18;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     border-radius: 8px;
     background-color: #f4947c;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-
 }
 
-#footer-servicios {
-    opacity: 80%;
+#footer-novedades li {
+    width: 30%;
+    margin: 10px auto 10px;
     text-align: center;
-    margin: 10px auto 27px;
-    width: 100%;
-    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    background-color: #0000000b;
+}
+
+/*--------------------------Footer Servicios----------------------------*/
+#footer-servicios ul {
+    color: white;
     font-size: 18;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     border-radius: 8px;
     background-color: #f9bf90;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-
 }
 
-#footer-contacto {
-    opacity: 80%;
+#footer-servicios li {
+    width: 30%;
+    margin: 10px auto 10px;
     text-align: center;
-    margin: 10px auto 27px;
-    width: 100%;
-    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    background-color: #0000000b;
+}
+
+/*--------------------------------Footer contacto------------------------*/
+
+#footer-contacto ul {
+    color: white;
     font-size: 18;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     border-radius: 8px;
     background-color: #dcddac;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
-
 }
+
+#footer-contacto li {
+    width: 30%;
+    margin: 10px auto 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+    background-color: #0000000b;
+}
+
 
 /*------------------------Si la pantalla es menos a el ancho de 800px-----------------*/
 
@@ -521,10 +607,17 @@ h3 {
         height: 240px;
     }
 
+    #titulo-alcance {
+
+        font-size: 24px;
+    }
+
+    #texto-alcance {
+        font-size: 18px;
+    }
 
 
-
-    ul {
+    #navegacion-mobile ul {
         display: none;
     }
 
@@ -535,6 +628,42 @@ h3 {
     input {
         display: none;
     }
+
+    /*---------Nosotros mobile--------*/
+
+    #nosotros-presentaciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo-nosotros {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #icono-carla img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #icono-romina img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #div-carla {
+        text-align: center;
+        font-size: 22px;
+        color: white;
+    }
+
+    #div-romina {
+        text-align: center;
+        font-size: 22px;
+        color: white;
+    }
+
+    /*------Estilo cuando esta expandido el menu hamburguesa---------*/
 
     label {
         box-sizing: border-box;
@@ -553,18 +682,18 @@ h3 {
         background: white;
     }
 
-    /*Estilo cuando esta expandido el menu hamburguesa*/
+
     input:checked~label {
         background: white;
     }
 
-    ul {
+    #navegacion-mobile ul {
         margin-top: 0;
         padding: 0;
         width: fit-content;
     }
 
-    a {
+    #navegacion-mobile a {
         display: block;
         background: #6cc4c4;
         margin: 2px;
@@ -575,7 +704,7 @@ h3 {
 
     }
 
-    a:hover {
+    #navegacion-mobile a:hover {
         filter: brightness(110%)
     }
 
@@ -588,7 +717,7 @@ h3 {
         width: 50%;
     }
 
-    #estilo-servicios > div {
+    #estilo-servicios>div {
         flex-basis: 100%;
     }
 
@@ -607,8 +736,48 @@ h3 {
 
     }
 
-    #estilo-cajones-imagenes-texto{
-        border-style:hidden;
+    #estilo-cajones-imagenes-texto {
+        border-radius: 8px;
+        background-color: #f9bf90;
+        margin: 10px auto 10px;
+        box-shadow: none;
+    }
+
+    /*-------------------------------Footers Mobile-----------*/
+    #footer-home li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #6cc4c4;
+    }
+
+    #footer-nosotros li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #fbe4a3;
+    }
+
+    #footer-novedades li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #f4947c;
+    }
+
+
+    #footer-servicios li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #f9bf90;
+    }
+
+    #footer-contacto li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #fbe4a3;
     }
 
 }
