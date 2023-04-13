@@ -17,19 +17,45 @@
 <body>
 
     <header>
-        <nav>
+        <nav id="navegacion-ancha">
             <div>
                 <figure id="logo">
-                    <img src="../img/logoblanco.png" alt="KIRANA Eventos" width="200px">
+                    <img src="./img/logoblanco.png" alt="KIRANA Eventos" width="200px">
+                    <figcaption>KIRANA EVENTOS</figcaption>
                 </figure>
             </div>
             <div>
-                <a href="../index.html">HOME</a>
-                <a href="./nosotros.html">NOSOTROS</a>
-                <a href="./novedades.html">NOVEDADES</a>
-                <a href="./servicios.html">SERVICIOS</a>
-                <a href="./contacto.html">CONTACTO</a>
+                <a href="./index.html">HOME</a>
+                <a href="./pages/nosotros.html">NOSOTROS</a>
+                <a href="./pages/novedades.html">NOVEDADES</a>
+                <a href="./pages/servicios.html">SERVICIOS</a>
+                <a href="./pages/contacto.html">CONTACTO</a>
                 <div class="animation start-nosotros"></div>
+
+            </div>
+        </nav>
+
+        <nav id="navegacion-mobile-nosotros">
+            <div class="logo-container">
+                <figure id="logo-mobile">
+                    <img src="../img/logoblanco.png" alt="KIRANA Eventos" width="120px">
+                    <figcaption>KIRANA EVENTOS</figcaption>
+                </figure>
+            </div>
+            <div class="menu-container">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle">
+                    <span></span>                    
+                    <span></span>
+                    <span></span>
+                </label>
+                <div id="menu-mobile">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./novedades.html">NOVEDADES</a></li>
+                    <li><a href="./servicios.html">SERVICIOS</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </div>
             </div>
         </nav>
     </header>
