@@ -46,6 +46,30 @@ h1 {
 
 }
 
+#navegacion-mobile-nosotros {
+    visibility: collapse;
+    height: 0;
+
+}
+
+#navegacion-mobile-novedades {
+    visibility: collapse;
+    height: 0;
+
+}
+
+#navegacion-mobile-servicios {
+    visibility: collapse;
+    height: 0;
+
+}
+
+#navegacion-mobile-contacto {
+    visibility: collapse;
+    height: 0;
+
+}
+
 
 
 nav {
@@ -609,33 +633,33 @@ h3 {
     }
 
     #navegacion-mobile-home {
-        visibility:visible;
+        visibility: visible;
         height: 0;
-    
+
     }
 
     #navegacion-mobile-servicios {
-        visibility:visible;
+        visibility: visible;
         height: 0;
-    
+
     }
 
     #navegacion-mobile-novedades {
-        visibility:visible;
+        visibility: visible;
         height: 0;
-    
+
     }
 
     #navegacion-mobile-contactos {
-        visibility:visible;
+        visibility: visible;
         height: 0;
-    
+
     }
 
     #navegacion-mobile-nosotros {
-        visibility:visible;
+        visibility: visible;
         height: 0;
-    
+
     }
 
     #menu-toggle {
@@ -670,7 +694,7 @@ h3 {
         padding: 4px;
         color: white;
         text-decoration: none;
-        
+
 
     }
 
@@ -708,7 +732,7 @@ h3 {
     #navegacion-mobile-home {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 10px auto 10px;
         width: 100%;
@@ -720,7 +744,7 @@ h3 {
     #navegacion-mobile-nosotros {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 10px auto 10px;
         width: 100%;
@@ -732,7 +756,7 @@ h3 {
     #navegacion-mobile-novedades {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 10px auto 10px;
         width: 100%;
@@ -744,7 +768,7 @@ h3 {
     #navegacion-mobile-servicios {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 10px auto 10px;
         width: 100%;
@@ -756,7 +780,7 @@ h3 {
     #navegacion-mobile-contacto {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 10px auto 10px;
         width: 100%;
@@ -773,137 +797,140 @@ h3 {
     #menu-container {
         flex: auto;
     }
-}
-
-/*---------------------- novedades mobile----------------- */
-
-#titulo-novedades {
-    font-size: 24px
-}
-#texto-novedades {
-    font-size: 12px;
-}
 
 
+    /*---------------------- novedades mobile----------------- */
 
-/*-----------------------Estilo alcance----------------------*/
+    #titulo-novedades {
+        font-size: 24px
+    }
 
-#titulo-alcance {
-
-    font-size: 24px;
-}
-
-#texto-alcance {
-    font-size: 18px;
-}
-
-
-/*-----------------------Nosotros mobile----------------------*/
-
-#nosotros-presentaciones {
-    flex-direction: column;
-    align-items: center;
-}
-
-#titulo-nosotros {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-#icono-carla img {
-    width: 150px;
-    height: 150px;
-}
-
-#icono-romina img {
-    width: 150px;
-    height: 150px;
-}
-
-#div-carla {
-    text-align: center;
-    font-size: 22px;
-    color: white;
-}
-
-#div-romina {
-    text-align: center;
-    font-size: 22px;
-    color: white;
-}
+    #texto-novedades {
+        font-size: 12px;
+    }
 
 
 
-/*-------------------Estilo carrousel--------------------*/
+    /*-----------------------Estilo alcance----------------------*/
 
-#carrousel-imagenes {
-    height: 200px;
-}
+    #titulo-alcance {
 
-#carrousel-imagenes img:hover {
-    width: 50%;
-}
+        font-size: 24px;
+    }
 
-/*-------------------Estilo servicios--------------------*/
-#estilo-servicios>div {
-    flex-basis: 100%;
-}
-
-#titulo-servicios {
-    font-size: 24px;
-}
-
-#texto-servicios,
-h3 {
-    font-size: 14px;
-}
-
-#imagenes-servicios img {
-
-    max-width: 100%;
-
-}
-
-#estilo-cajones-imagenes-texto {
-    border-radius: 8px;
-    background-color: #f9bf90;
-    margin: 10px auto 10px;
-    box-shadow: none;
-}
-
-/*-------------------------------Footers Mobile-----------*/
-#footer-home li {
-    width: 100%;
-    margin-bottom: 0;
-    box-shadow: none;
-    background-color: #6cc4c4;
-}
-
-#footer-nosotros li {
-    width: 100%;
-    margin-bottom: 0;
-    box-shadow: none;
-    background-color: #fbe4a3;
-}
-
-#footer-novedades li {
-    width: 100%;
-    margin-bottom: 0;
-    box-shadow: none;
-    background-color: #f4947c;
-}
+    #texto-alcance {
+        font-size: 18px;
+    }
 
 
-#footer-servicios li {
-    width: 100%;
-    margin-bottom: 0;
-    box-shadow: none;
-    background-color: #f9bf90;
-}
+    /*-----------------------Nosotros mobile----------------------*/
 
-#footer-contacto li {
-    width: 100%;
-    margin-bottom: 0;
-    box-shadow: none;
-    background-color: #fbe4a3;
+    #nosotros-presentaciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo-nosotros {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #icono-carla img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #icono-romina img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #div-carla {
+        text-align: center;
+        font-size: 22px;
+        color: white;
+    }
+
+    #div-romina {
+        text-align: center;
+        font-size: 22px;
+        color: white;
+    }
+
+
+
+    /*-------------------Estilo carrousel--------------------*/
+
+    #carrousel-imagenes {
+        height: 200px;
+    }
+
+    #carrousel-imagenes img:hover {
+        width: 50%;
+    }
+
+    /*-------------------Estilo servicios--------------------*/
+    #estilo-servicios>div {
+        flex-basis: 100%;
+    }
+
+    #titulo-servicios {
+        font-size: 24px;
+    }
+
+    #texto-servicios,
+    h3 {
+        font-size: 14px;
+    }
+
+    #imagenes-servicios img {
+
+        max-width: 100%;
+
+    }
+
+    #estilo-cajones-imagenes-texto {
+        border-radius: 8px;
+        background-color: #f9bf90;
+        margin: 10px auto 10px;
+        box-shadow: none;
+    }
+
+    /*-------------------------------Footers Mobile-----------*/
+    #footer-home li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #6cc4c4;
+    }
+
+    #footer-nosotros li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #fbe4a3;
+    }
+
+    #footer-novedades li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #f4947c;
+    }
+
+
+    #footer-servicios li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #f9bf90;
+    }
+
+    #footer-contacto li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: #fbe4a3;
+    }
+
 }
