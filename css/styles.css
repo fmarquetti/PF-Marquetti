@@ -438,12 +438,29 @@ h3 {
 
 #formulario-contacto {
     display: grid;
-    grid-template-columns: 15% 10%;
-    grid-template-rows: 30px 30px 30px 30px 30px 170px 30px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-row label, .form-row span {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 90%;
 }
 
 
@@ -650,7 +667,7 @@ h3 {
 
     }
 
-    #navegacion-mobile-contactos {
+    #navegacion-mobile-contacto {
         visibility: visible;
         height: 0;
 
@@ -895,6 +912,31 @@ h3 {
         margin: 10px auto 10px;
         box-shadow: none;
     }
+
+    /*-------------------------------Formato Contacto-----------*/
+
+    #formulario-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row label,
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        width: 100%;
+    }
+
+    .form-row label {
+        margin-bottom: 5px;
+    }
+
+
 
     /*-------------------------------Footers Mobile-----------*/
     #footer-home li {
