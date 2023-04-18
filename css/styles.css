@@ -320,8 +320,8 @@ h3 {
 }
 
 #icono-carla img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background-size: cover;
     border-radius: 50%;
     border-style: solid;
@@ -330,8 +330,8 @@ h3 {
 }
 
 #icono-romina img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background-size: cover;
     border-radius: 50%;
     border-style: solid;
@@ -342,7 +342,7 @@ h3 {
 #div-carla {
     float: left;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
 
 }
@@ -350,7 +350,7 @@ h3 {
 #div-romina {
     float: right;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
 }
 
