@@ -1,24 +1,4 @@
-/*Estilo título*/
-
-
-
-
-/*formato titulo
-
-h1 {
-    color: #a2d2ff;
-    font-size: 50px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    text-align: left;
-    text-shadow: #087fa7cc;
-    background-color: #cdb4db;
-}
-
-*/
-
-
+/*----Estilo LOGO-------*/
 
 #logo {
 
@@ -31,7 +11,6 @@ h1 {
 }
 
 /*----------------------------------Formato barra navegacion--------------------------------------------*/
-
 
 #navegacion-ancha {
     background-color: #6cc4c4;
@@ -69,8 +48,6 @@ h1 {
     height: 0;
 
 }
-
-
 
 nav {
     opacity: 80%;
@@ -139,8 +116,6 @@ a:nth-child(1):hover~.animation {
 
 }
 
-
-
 nav .start-nosotros,
 a:nth-child(2):hover~.animation {
     width: 100%;
@@ -154,8 +129,6 @@ a:nth-child(3):hover~.animation {
     left: 100;
     background-color: #f4947c;
 }
-
-
 
 nav .start-servicios,
 a:nth-child(4):hover~.animation {
@@ -448,10 +421,11 @@ h3 {
 .form-row {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.form-row label, .form-row span {
+.form-row label,
+.form-row span {
     text-align: center;
     margin-bottom: 5px;
     width: 90%;
@@ -462,7 +436,6 @@ h3 {
 .form-row textarea {
     width: 90%;
 }
-
 
 /*------------------------------------------------Formato Carrousel----------------------------------------------------------*/
 
@@ -493,6 +466,7 @@ h3 {
 /*------------------------------------------------Formato footer--------------------------------------------------------------*/
 
 /*-------------------Footer Home-------------*/
+
 #footer-home ul {
     color: white;
     font-size: 18;
@@ -576,6 +550,7 @@ h3 {
 }
 
 /*--------------------------Footer Servicios----------------------------*/
+
 #footer-servicios ul {
     color: white;
     font-size: 18;
@@ -630,14 +605,11 @@ h3 {
     background-color: #0000000b;
 }
 
-
 /*------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------*/
 /*------------------------Si la pantalla es menos a el ancho de 800px-----------------*/
 /*------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------*/
-
-
 
 @media (max-width: 768px) {
 
@@ -815,7 +787,6 @@ h3 {
         flex: auto;
     }
 
-
     /*---------------------- novedades mobile----------------- */
 
     #titulo-novedades {
@@ -825,8 +796,6 @@ h3 {
     #texto-novedades {
         font-size: 12px;
     }
-
-
 
     /*-----------------------Estilo alcance----------------------*/
 
@@ -838,7 +807,6 @@ h3 {
     #texto-alcance {
         font-size: 18px;
     }
-
 
     /*-----------------------Nosotros mobile----------------------*/
 
@@ -873,8 +841,6 @@ h3 {
         font-size: 22px;
         color: white;
     }
-
-
 
     /*-------------------Estilo carrousel--------------------*/
 
@@ -935,8 +901,6 @@ h3 {
     .form-row label {
         margin-bottom: 5px;
     }
-
-
 
     /*-------------------------------Footers Mobile-----------*/
     #footer-home li {
