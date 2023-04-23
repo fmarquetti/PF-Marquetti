@@ -1,0 +1,304 @@
+@media (max-width: 768px) {
+
+    /*-----------------------navegador----------------------*/
+
+    #navegacion-ancha {
+        visibility: collapse;
+        height: 0;
+
+    }
+
+    #navegacion-mobile-home,
+    #navegacion-mobile-nosotros,
+    #navegacion-mobile-contacto,
+    #navegacion-mobile-servicios,
+    #navegacion-mobile-novedades {
+        visibility: visible;
+        height: 0;
+
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle:checked~#menu-mobile {
+        display: block;
+    }
+
+    #menu-mobile {
+        display: none;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        background-color: $color-home;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: white;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-size: 18px;
+            display: block;
+            width: auto;
+            padding: 4px;
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+    }
+
+    #menu-toggle+label {
+        display: block;
+        width: 50px;
+        height: 20px;
+        margin: 50px;
+        cursor: pointer;
+    }
+
+    #menu-toggle+label span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        padding: 1px;
+        border-radius: 3px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        margin-top: 3px;
+    }
+
+    #menu-toggle:checked+label span:nth-child(1) {
+        background-color: #f4947c;
+    }
+
+    #menu-toggle:checked+label span:nth-child(2) {
+        background-color: #f9bf90;
+    }
+
+    #menu-toggle:checked+label span:nth-child(3) {
+        background-color: #fbe4a3;
+    }
+
+    #navegacion-mobile-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+        width: 100%;
+        height: 100px;
+        background-color: $color-home;
+        z-index: 1;
+    }
+
+    #navegacion-mobile-nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+        width: 100%;
+        height: 100px;
+        background-color: $color-nosotros;
+        z-index: 1;
+    }
+
+    #navegacion-mobile-novedades {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+        width: 100%;
+        height: 100px;
+        background-color: $color-novedades;
+        z-index: 1;
+    }
+
+    #navegacion-mobile-servicios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+        width: 100%;
+        height: 100px;
+        background-color: $color-servicios;
+        z-index: 1;
+    }
+
+    #navegacion-mobile-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px;
+        width: 100%;
+        height: 100px;
+        background-color: $color-contacto;
+        z-index: 1;
+    }
+
+    #logo-container {
+        flex: auto;
+        margin-top: 10px;
+    }
+
+    #logo-mobile {
+        filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.7));
+    }
+
+    #menu-container {
+        flex: auto;
+    }
+
+    /*---------------------- novedades mobile----------------- */
+
+    #titulo-novedades {
+        font-size: $altura-titulos-mobile;
+    }
+
+    #texto-novedades {
+        font-size: $altura-texto-mobile;
+    }
+
+    /*-----------------------Estilo alcance----------------------*/
+
+    #titulo-alcance {
+
+        font-size: $altura-titulos-mobile;
+    }
+
+    #texto-alcance {
+        font-size: $altura-texto-mobile;
+    }
+
+    /*-----------------------Nosotros mobile----------------------*/
+
+    #nosotros-presentaciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo-nosotros {
+        font-size: $altura-titulos-mobile;
+        font-weight: 600;
+    }
+
+    #icono-carla img,
+    #icono-romina img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #div-carla,
+    #div-romina {
+        text-align: center;
+        font-size: $altura-texto-mobile;
+        color: white;
+    }
+
+    /*-------------------Estilo carrousel--------------------*/
+
+    #carrousel-imagenes {
+        height: 200px;
+
+        img:hover {
+            width: 50%;
+        }
+    }
+
+    /*-------------------Estilo servicios--------------------*/
+    #estilo-servicios>div {
+        flex-basis: 100%;
+    }
+
+    #titulo-servicios {
+        font-size: $altura-titulos-mobile;
+    }
+
+    #texto-servicios,
+    h3 {
+        font-size: $altura-texto-mobile;
+    }
+
+    #imagenes-servicios img {
+
+        max-width: 100%;
+
+    }
+
+    #estilo-cajones-imagenes-texto {
+        border-radius: 8px;
+        background-color: $color-servicios;
+        margin: 10px auto 10px;
+        box-shadow: none;
+    }
+
+    /*-------------------------------Formato Contacto-----------*/
+
+    #formulario-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row label,
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        width: 100%;
+    }
+
+    .form-row label {
+        margin-bottom: 5px;
+    }
+
+    /*-------------------------------Footers Mobile-----------*/
+    #footer-home ul li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: $color-home;
+    }
+
+    #footer-nosotros ul li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: $color-nosotros;
+    }
+
+    #footer-novedades ul li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: $color-novedades;
+    }
+
+
+    #footer-servicios ul li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: $color-servicios;
+    }
+
+    #footer-contacto ul li {
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        background-color: $color-contacto;
+    }
+}

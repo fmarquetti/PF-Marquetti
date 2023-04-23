@@ -1,0 +1,67 @@
+#cajon-nosotros {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: $color-nosotros;
+    display: inline-block;
+    font-family: $tipografia-especial;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+}
+
+#titulo-nosotros {
+
+    text-align: center;
+    font-size: $altura-titulos-ancho;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#nosotros-presentaciones {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+#icono-carla img,
+#icono-romina img {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+}
+
+
+#div-carla {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
+}
+
+#div-romina {
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#texto-nosotros {
+    margin-left: 27px;
+    margin-right: 27px;
+    text-align: center;
+    font-size: $altura-texto-ancho;
+    color: white;
+
+}

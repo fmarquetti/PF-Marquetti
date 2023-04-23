@@ -1,0 +1,51 @@
+/*----------VARIABLES-----------*/
+
+@import"./base";
+
+/*---------Estilo LOGO----------*/
+
+@import "./components/estilologo";
+
+/*---Formato barra navegacion---*/
+
+@import"./components/navegadorancho";
+
+/*-------formato cuerpo---------*/
+
+@import"./components/body";
+
+/*-----formato cajones home-----*/
+
+@import"./pages/index";
+
+/*---formato cajones servicios--*/
+
+@import"./pages/servicios";
+
+/*---formato cajones nosotros---*/
+
+@import"./pages/nosotros";
+
+/*---formato cajones novedades--*/
+
+@import"./pages/novedades";
+
+/*---formato cajones contacto---*/
+
+@import"./pages/contacto";
+
+/*------Formato Carrousel-------*/
+
+@import"./components/carrousel";
+
+/*--------Formato footer--------*/
+
+@import"./components/footers";
+
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------Si la pantalla es menos a el ancho de 768px-----------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+@import"./components/versionmobile";

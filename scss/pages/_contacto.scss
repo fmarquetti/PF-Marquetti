@@ -1,0 +1,43 @@
+#cajon-contacto {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: $color-contacto;
+    display: inline-block;
+    font-family: $tipografia-especial;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.339);
+    color: white;
+
+}
+
+#formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-row label,
+.form-row span {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 90%;
+}

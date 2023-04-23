@@ -1,0 +1,52 @@
+#cajon-novedades {
+    text-align: center;
+    opacity: 80%;
+    margin: 10px auto 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: $color-novedades;
+    display: inline-block;
+    font-family: $tipografia-especial;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+    color: white;
+
+}
+
+#titulo-novedades {
+    color: white;
+    font-size: $altura-titulos-ancho;
+}
+
+#imagenes-novedades img {
+    background-size: cover;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.196);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#texto-novedades,
+h3 {
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    font-size: $altura-texto-ancho;
+    font-weight: 400;
+    font-family: $tipografia-especial;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#estilo-cajones-imagenes-texto-novedades {
+    border-radius: 8px;
+    margin: 10px auto 10px;
+    width: 80%;
+}

@@ -1,0 +1,112 @@
+
+#navegacion-ancha {
+    background-color: $color-home;
+    z-index: 1;
+    visibility: visible;
+    height: 240px;
+}
+
+#navegacion-mobile-home,
+#navegacion-mobile-nosotros,
+#navegacion-mobile-novedades,
+#navegacion-mobile-servicios,
+#navegacion-mobile-contacto {
+    visibility: collapse;
+    height: 0;
+
+}
+
+nav {
+    opacity: 80%;
+    text-align: center;
+    margin: 10px auto 10px;
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+    font-size: 0;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.088);
+
+    a {
+
+        line-height: 10px;
+        height: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+        transition: all .5s ease 0s;
+        border-radius: 8px;
+    }
+
+    .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 100%;
+        left: 0;
+        background-color: $color-home;
+
+    }
+
+    .start-nosotros,
+    a:nth-child(2):hover~.animation {
+        width: 100%;
+        left: 210;
+        background-color: $color-nosotros;
+    }
+
+    .start-novedades,
+    a:nth-child(3):hover~.animation {
+        width: 100%;
+        left: 100;
+        background-color: $color-novedades;
+    }
+
+    .start-servicios,
+    a:nth-child(4):hover~.animation {
+        width: 100%;
+        left: 310;
+        background-color: $color-servicios;
+    }
+
+    .start-contacto,
+    a:nth-child(5):hover~.animation {
+        width: 100%;
+        left: 470;
+        background-color: $color-contacto;
+    }
+
+}
+
+a:nth-child(1) {
+    width: 160px;
+}
+
+a:nth-child(2) {
+    width: 160px;
+}
+
+a:nth-child(3) {
+    width: 160px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 160px;
+}

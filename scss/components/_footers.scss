@@ -1,0 +1,139 @@
+/*-------------------Footer Home-------------*/
+
+#footer-home ul {
+    color: white;
+    font-size: $altura-texto-ancho;
+    font-weight: 600;
+    font-family: $tipografia-especial;
+    border-radius: 8px;
+    background-color: $color-home;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+    li {
+        width: 30%;
+        margin: 10px auto 10px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+        background-color: #0000000b;
+    }
+}
+
+/*---------------------Footer Nosotros------------------------*/
+
+#footer-nosotros ul {
+    color: white;
+    font-size: $altura-texto-ancho;
+    font-weight: 600;
+    font-family: $tipografia-especial;
+    border-radius: 8px;
+    background-color: $color-nosotros;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+    li {
+        width: 30%;
+        margin: 10px auto 10px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+        background-color: #0000000b;
+    }
+}
+
+/*---------------------Footer Novedades------------------------*/
+
+#footer-novedades ul {
+    color: white;
+    font-size: $altura-texto-ancho;
+    font-weight: 600;
+    font-family: $tipografia-especial;
+    border-radius: 8px;
+    background-color: $color-novedades;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+    li {
+        width: 30%;
+        margin: 10px auto 10px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+        background-color: #0000000b;
+    }
+}
+
+/*--------------------------Footer Servicios----------------------------*/
+
+#footer-servicios ul {
+    color: white;
+    font-size: $altura-texto-ancho;
+    font-weight: 600;
+    font-family: $tipografia-especial;
+    border-radius: 8px;
+    background-color: $color-servicios;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+    li {
+        width: 30%;
+        margin: 10px auto 10px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+        background-color: #0000000b;
+    }
+}
+
+/*--------------------------------Footer contacto------------------------*/
+
+#footer-contacto ul {
+    color: white;
+    font-size: $altura-texto-ancho;
+    font-weight: 600;
+    font-family: $tipografia-especial;
+    border-radius: 8px;
+    background-color: $color-contacto;
+    opacity: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.196);
+
+    li {
+        width: 30%;
+        margin: 10px auto 10px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.196);
+        background-color: #0000000b;
+    }
+}
