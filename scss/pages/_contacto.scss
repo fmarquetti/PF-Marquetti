@@ -41,3 +41,31 @@
 .form-row textarea {
     width: 90%;
 }
+
+
+/*--------formato de menu oculto-----*/
+
+#panel-administracion div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+
+    a {
+        color: rgba(255, 255, 255, 0);
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+        }
+        
+    }
+
+    &:hover {
+        background-color: $color-contacto;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.339);
+    }
+}
