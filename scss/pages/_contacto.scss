@@ -41,3 +41,26 @@
 .form-row textarea {
     width: 90%;
 }
+
+#panel-administracion div {
+    display: inline-block;
+    /* Esto hace que los DIV se muestren uno al lado del otro */
+    background-color: white;
+    /* Fondo blanco */
+    padding: 10px;
+    /* Agrega un poco de espacio entre el borde y el contenido del DIV */
+    transition: background-color 0.3s ease;
+    /* Transición suave cuando cambia el color de fondo */
+
+    a {
+        color: white;
+        /* Texto blanco */
+        text-decoration: none;
+        /* Quita el subrayado del enlace */
+    }
+
+    &:hover {
+        background-color: black;
+        /* Cambia el fondo del DIV a negro cuando se pasa el mouse por encima */
+    }
+}
