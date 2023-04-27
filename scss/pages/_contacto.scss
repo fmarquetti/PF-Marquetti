@@ -43,24 +43,24 @@
 }
 
 #panel-administracion div {
-    display: inline-block;
-    /* Esto hace que los DIV se muestren uno al lado del otro */
-    background-color: white;
-    /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    background-color:rgba($color-contacto, 0.5);
     padding: 10px;
-    /* Agrega un poco de espacio entre el borde y el contenido del DIV */
     transition: background-color 0.3s ease;
-    /* Transición suave cuando cambia el color de fondo */
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    height: 10px;
 
     a {
         color: white;
-        /* Texto blanco */
         text-decoration: none;
-        /* Quita el subrayado del enlace */
+        width: 100%;
+        text-align: center;
     }
 
     &:hover {
         background-color: black;
-        /* Cambia el fondo del DIV a negro cuando se pasa el mouse por encima */
     }
 }
