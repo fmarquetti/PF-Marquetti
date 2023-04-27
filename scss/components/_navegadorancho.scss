@@ -12,6 +12,7 @@
 #navegacion-mobile-contacto {
     visibility: collapse;
     height: 0;
+
 }
 
 nav {
@@ -26,6 +27,7 @@ nav {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.088);
 
     a {
+
         line-height: 10px;
         height: 100%;
         font-size: 18px;
@@ -39,26 +41,6 @@ nav {
         color: white;
         cursor: pointer;
         font-family: Arial, Helvetica, sans-serif;
-
-        &:nth-child(1) {
-            width: 160px;
-        }
-
-        &:nth-child(2) {
-            width: 160px;
-        }
-
-        &:nth-child(3) {
-            width: 160px;
-        }
-
-        &:nth-child(4) {
-            width: 160px;
-        }
-
-        &:nth-child(5) {
-            width: 160px;
-        }
     }
 
     .animation {
@@ -68,40 +50,62 @@ nav {
         z-index: 1;
         transition: all .5s ease 0s;
         border-radius: 8px;
-
-        &.start-home,
-        a:nth-child(1):hover~& {
-            width: 100%;
-            left: 0;
-            background-color: $color-home;
-        }
-
-        &.start-nosotros,
-        a:nth-child(2):hover~& {
-            width: 100%;
-            left: 210px;
-            background-color: $color-nosotros;
-        }
-
-        &.start-novedades,
-        a:nth-child(3):hover~& {
-            width: 100%;
-            left: 100px;
-            background-color: $color-novedades;
-        }
-
-        &.start-servicios,
-        a:nth-child(4):hover~& {
-            width: 100%;
-            left: 310px;
-            background-color: $color-servicios;
-        }
-
-        &.start-contacto,
-        a:nth-child(5):hover~& {
-            width: 100%;
-            left: 470px;
-            background-color: $color-contacto;
-        }
     }
+
+    .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 100%;
+        left: 0;
+        background-color: $color-home;
+
+    }
+
+    .start-nosotros,
+    a:nth-child(2):hover~.animation {
+        width: 100%;
+        left: 210;
+        background-color: $color-nosotros;
+    }
+
+    .start-novedades,
+    a:nth-child(3):hover~.animation {
+        width: 100%;
+        left: 100;
+        background-color: $color-novedades;
+    }
+
+    .start-servicios,
+    a:nth-child(4):hover~.animation {
+        width: 100%;
+        left: 310;
+        background-color: $color-servicios;
+    }
+
+    .start-contacto,
+    a:nth-child(5):hover~.animation {
+        width: 100%;
+        left: 470;
+        background-color: $color-contacto;
+    }
+
+}
+
+a:nth-child(1) {
+    width: 160px;
+}
+
+a:nth-child(2) {
+    width: 160px;
+}
+
+a:nth-child(3) {
+    width: 160px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 160px;
 }
